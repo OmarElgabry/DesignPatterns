@@ -37,6 +37,13 @@ Decouples an abstraction from its implementation so that the two can vary indepe
 
 ![Class Diagram](https://raw.githubusercontent.com/OmarElGabry/JavaDesignPatterns/master/diagrams/bridge.png)
 
+### Composite
+It's used to create a tree structure of group of objects. So, an Object can be collection of other objects, where objects share a common interface that defines the common operations.
+
+An object can have a collection of objects called _Composite_ Or _Node_, while objects that can't have other objects(at the lowest level) called _Leaf_. _Composite_ object can have leafs or other composites.
+
+![Class Diagram](https://raw.githubusercontent.com/OmarElGabry/JavaDesignPatterns/master/diagrams/composite.png)
+
 ## Behavioral<a name="behavioral"></a>
 ### Strategy
 Strategy is used when you want to extend the behavior of an Object, where this behavior could vary during the run time. If multiple objects need to use the same behavior(algorithm), we get the benefit of code reuse too.
@@ -98,6 +105,19 @@ If you are concerned about synchronization, eager intantiation could be useful a
 Another solution for synchronization using ```synchronized``` method. But, you will pay for it's pitfall; Synchronized code takes a lot longer to run.
 
 ![Class Diagram](https://raw.githubusercontent.com/OmarElGabry/JavaDesignPatterns/master/diagrams/singleton.synchronized.png)
+
+### Prototype
+The Portotype Pattern used when you want to hide the complexity of creating new instance same as in Factory Pattern, and Creating an object is an expensive operation. Thus, copy an existing object is much efficient. It uses Java's Cloneable Interface for cloning objects.
+ 
+#### Abstract Class
+Using abstract class
+
+![Class Diagram](https://raw.githubusercontent.com/OmarElGabry/JavaDesignPatterns/master/diagrams/prototype.abstract.png)
+
+#### Interface
+Using Interface
+ 
+![Class Diagram](https://raw.githubusercontent.com/OmarElGabry/JavaDesignPatterns/master/diagrams/prototype.interface.png)
 
 ## Support
 I've written these snippets in my free time during my studies. If you find it useful, please support the project by spreading the word.
