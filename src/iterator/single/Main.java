@@ -11,9 +11,9 @@ public class Main {
 		MyList list = new MyList();
 		
 		// add strings 
-		list.addItem("Prague");
-		list.addItem("California");
-		list.addItem("Amsterdam");
+		list.addItem("Banglore");
+		list.addItem("Mumbai");
+		list.addItem("Noida");
 		
 		// get iterator object 
 		Iterator<String> it = list.iterator();
