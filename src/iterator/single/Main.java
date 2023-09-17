@@ -14,6 +14,8 @@ public class Main {
 		list.addItem("Prague");
 		list.addItem("California");
 		list.addItem("Amsterdam");
+		list.addItem("India");
+		list.addItem("Philippines");
 		
 		// get iterator object 
 		Iterator<String> it = list.iterator();
